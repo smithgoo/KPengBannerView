@@ -15,8 +15,8 @@
 
 @interface VierticalScrollView ()
 @property (nonatomic,strong) NSMutableArray *titles;
-@property(assign, nonatomic)int titleIndex;
-@property(assign, nonatomic)int index;
+@property(assign, nonatomic)NSInteger titleIndex;
+@property(assign, nonatomic)NSInteger index;
 @end
 @implementation VierticalScrollView
 
