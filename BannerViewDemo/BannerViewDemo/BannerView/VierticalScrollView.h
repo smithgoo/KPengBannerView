@@ -26,7 +26,7 @@
 
 @property (nonatomic,strong) id<VierticalScrollViewDelegate> delegate;
 
--(instancetype)initWithArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location;
+-(instancetype)initWithArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor;
 +(instancetype)initWithTitleArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor;
 
 

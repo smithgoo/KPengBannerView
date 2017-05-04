@@ -13,8 +13,6 @@
 #define BTNWidth self.bounds.size.width
 #define BTNHeight self.bounds.size.height
 
-
-
 @interface VierticalScrollView ()
 @property (nonatomic,strong) NSMutableArray *titles;
 @property(assign, nonatomic)int titleIndex;
