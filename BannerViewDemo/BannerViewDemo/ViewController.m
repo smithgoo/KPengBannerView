@@ -18,7 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    VierticalScrollView *banner =[VierticalScrollView initWithTitleArray:@[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天"] andFrame:CGRectMake(100,100,100,40) titleLocation:@"center"];
+    VierticalScrollView *banner =[VierticalScrollView initWithTitleArray:@[@"星期一",@"星期二",@"星期三",@"星期四",@"星期五",@"星期六",@"星期天"] andFrame:CGRectMake(100,100,100,40) titleLocation:@"center" withTitleColor:[UIColor redColor]];
     [self.view addSubview:banner];
     banner.layer.borderColor =[UIColor blackColor].CGColor;
     banner.layer.borderWidth =0.3;

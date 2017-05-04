@@ -8,14 +8,12 @@
 
 #import "VierticalScrollView.h"
 #import "UIView+FrameExtension.h"
-#define MMColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
-#define MMRandomColor [UIColor whiteColor]/*MMColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))*/
 #define Screen_width ([UIScreen mainScreen].bounds.size.width)
 #define Screen_height ([UIScreen mainScreen].bounds.size.height)
 #define BTNWidth self.bounds.size.width
 #define BTNHeight self.bounds.size.height
 
-#define km_rgb_hex(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
+
 
 @interface VierticalScrollView ()
 @property (nonatomic,strong) NSMutableArray *titles;
@@ -24,7 +22,7 @@
 @end
 @implementation VierticalScrollView
 
--(instancetype)initWithArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location{
+-(instancetype)initWithArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor{
     if (self = [super initWithFrame:frame]) {
       
         NSMutableArray *MutableTitles = [NSMutableArray arrayWithArray:titles];
@@ -39,8 +37,8 @@
         [btn setTitle:self.titles[0] forState:UIControlStateNormal];
         btn.titleLabel.font =[UIFont systemFontOfSize:14];
         btn.titleLabel.numberOfLines=2;
-        [btn setTitleColor:km_rgb_hex(0xeb443b) forState:UIControlStateNormal];
-        [btn setBackgroundColor:MMRandomColor];
+        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+        [btn setBackgroundColor:[UIColor whiteColor]];
         if ([location isEqualToString:@"left"]) {
           btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         } else  if ([location isEqualToString:@"right"]) {
@@ -59,14 +57,14 @@
     return self;
 }
 
-+(instancetype)initWithTitleArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location{
-    return [[self alloc]initWithArray:titles andFrame:frame titleLocation:location];
++(instancetype)initWithTitleArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor{
+    return [[self alloc]initWithArray:titles andFrame:frame titleLocation:location withTitleColor:currentTitlecolor];
 }
 
 -(void)nextButton:(NSTimer *)timer{
     UIButton *firstBtn = [self viewWithTag:self.index];
     UIButton *modelBtn = [[UIButton alloc]initWithFrame:CGRectMake(0, BTNHeight, BTNWidth, BTNHeight)];
-    [modelBtn setBackgroundColor:MMRandomColor];
+    [modelBtn setBackgroundColor:[UIColor whiteColor]];
     modelBtn.tag = self.index + 1;
     if ([self.titles[self.titleIndex+1] isEqualToString:@""]) {
         self.titleIndex = -1;
@@ -80,7 +78,7 @@
     [modelBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     [modelBtn setTitle:self.titles[self.titleIndex+1] forState:UIControlStateNormal];
-      [modelBtn setTitleColor:km_rgb_hex(0xeb443b) forState:UIControlStateNormal];
+      [modelBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     modelBtn.titleLabel.font =[UIFont systemFontOfSize:14];
       modelBtn.titleLabel.numberOfLines=2;
     
