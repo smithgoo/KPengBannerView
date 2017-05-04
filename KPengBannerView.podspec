@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
   s.name             = "KPengBannerView"
 
-  s.version          = “0.0.2”
+  s.version          = “0.0.5”
 
   s.summary          = "A marquee view used on iOS."
   s.description      = <<-DESC
                        It is a marquee view used on iOS, which implement by Objective-C.
                        DESC
-  s.homepage         = "https://github.com/smithgoo/KPengBannerView.git"
+  s.homepage         = "https://github.com/smithgoo/KPengBannerView"
   # s.screenshots      = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "王朋" => "294336370@qq.com" }
