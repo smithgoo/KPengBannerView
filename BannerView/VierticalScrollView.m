@@ -14,6 +14,7 @@
 #define Screen_height ([UIScreen mainScreen].bounds.size.height)
 #define BTNWidth self.bounds.size.width
 #define BTNHeight self.bounds.size.height
+#define km_rgb_hex(rgbValue)    [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 @interface VierticalScrollView ()
 @property (nonatomic,strong) NSMutableArray *titles;
 @property(assign, nonatomic)int titleIndex;

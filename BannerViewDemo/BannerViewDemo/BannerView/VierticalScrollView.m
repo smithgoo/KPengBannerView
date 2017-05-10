@@ -35,8 +35,8 @@
         [btn setTitle:self.titles[0] forState:UIControlStateNormal];
         btn.titleLabel.font =[UIFont systemFontOfSize:14];
         btn.titleLabel.numberOfLines=2;
-        [btn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-        [btn setBackgroundColor:[UIColor whiteColor]];
+        [btn setTitleColor:[UIColor colorWithRed:147.0f green:147.0f blue:147.0f alpha:1.0f] forState:UIControlStateNormal];
+        [btn setBackgroundColor:[UIColor colorWithRed:255.0f green:255.0f blue:255.0f alpha:1.0f]];
         if ([location isEqualToString:@"left"]) {
           btn.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
         } else  if ([location isEqualToString:@"right"]) {
@@ -76,7 +76,7 @@
     [modelBtn addTarget:self action:@selector(clickBtn:) forControlEvents:UIControlEventTouchUpInside];
     
     [modelBtn setTitle:self.titles[self.titleIndex+1] forState:UIControlStateNormal];
-      [modelBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+      [modelBtn setTitleColor:[UIColor colorWithRed:147.0f green:147.0f blue:147.0f alpha:1.0f] forState:UIControlStateNormal];
     modelBtn.titleLabel.font =[UIFont systemFontOfSize:14];
       modelBtn.titleLabel.numberOfLines=2;
     
