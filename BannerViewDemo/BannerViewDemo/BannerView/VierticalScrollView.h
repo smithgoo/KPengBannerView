@@ -26,9 +26,12 @@
 
 @property (nonatomic,strong) id<VierticalScrollViewDelegate> delegate;
 
--(instancetype)initWithArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor;
-+(instancetype)initWithTitleArray:(NSArray *)titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor;
+-(instancetype)initWithArray:(id )titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor time:(NSTimeInterval)ti;
++(instancetype)initWithTitleArray:(id )titles andFrame:(CGRect)frame titleLocation:(NSString *)location withTitleColor:(UIColor*)currentTitlecolor time:(NSTimeInterval)ti;
 
+@property (nonatomic,strong) UIColor *frontColor;
+
+@property (nonatomic,strong) UIColor *blackColor;
 
 
 @end

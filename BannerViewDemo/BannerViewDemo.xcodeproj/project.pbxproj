@@ -225,7 +225,7 @@
 				TargetAttributes = {
 					AA8662941EBAB3D700F67BFA = {
 						CreatedOnToolsVersion = 8.3;
-						DevelopmentTeam = U96Y6G4AUX;
+						DevelopmentTeam = 8F8HDAXHUL;
 						ProvisioningStyle = Automatic;
 					};
 					AA8662AD1EBAB3D700F67BFA = {
@@ -449,7 +449,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				DEVELOPMENT_TEAM = 8F8HDAXHUL;
 				INFOPLIST_FILE = BannerViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = smithgoo.BannerViewDemo;
@@ -461,7 +461,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = U96Y6G4AUX;
+				DEVELOPMENT_TEAM = 8F8HDAXHUL;
 				INFOPLIST_FILE = BannerViewDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = smithgoo.BannerViewDemo;
@@ -538,6 +538,7 @@
 				AA8662C41EBAB3D700F67BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA8662C51EBAB3D700F67BFA /* Build configuration list for PBXNativeTarget "BannerViewDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -546,6 +547,7 @@
 				AA8662C71EBAB3D700F67BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AA8662C81EBAB3D700F67BFA /* Build configuration list for PBXNativeTarget "BannerViewDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -554,6 +556,7 @@
 				AA8662CA1EBAB3D700F67BFA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
