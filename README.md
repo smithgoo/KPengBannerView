@@ -16,3 +16,5 @@
   banner.layer.borderWidth =0.3;
   
   banner.delegate =self;
+  
+     ![](gif.gif)
