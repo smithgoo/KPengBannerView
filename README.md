@@ -17,4 +17,4 @@
   
   banner.delegate =self;
   
-     ![](gif.gif)
+     ![](git.gif)
