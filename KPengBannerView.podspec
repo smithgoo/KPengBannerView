@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 s.name         = "KPengBannerView"
-s.version      = "0.0.5"
+s.version      = "0.0.6"
 s.summary      = "一个广告上下翻动的banner控件"
 s.description      = <<-DESC
 It is a marquee view used on iOS, which implement by Objective-C.
